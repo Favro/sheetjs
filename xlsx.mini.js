@@ -2,7 +2,7 @@
 /* vim: set ts=2: */
 /*exported XLSX */
 /*global global, exports, module, require:false, process:false, Buffer:false, ArrayBuffer:false */
-var XLSX = {};
+XLSX = {};
 function make_xlsx_lib(XLSX){
 XLSX.version = '0.16.9';
 var current_codepage = 1200, current_ansi = 1252;
@@ -10511,4 +10511,5 @@ else if(typeof module !== 'undefined' && module.exports) make_xlsx_lib(module.ex
 else if(typeof define === 'function' && define.amd) define(function() { if(!XLSX.version) make_xlsx_lib(XLSX); return XLSX; });
 else make_xlsx_lib(XLSX);
 /*exported XLS, ODS */
-var XLS = XLSX, ODS = XLSX;
+XLS = XLSX;
+ODS = XLSX;

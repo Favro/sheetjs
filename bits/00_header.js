@@ -2,5 +2,5 @@
 /* vim: set ts=2: */
 /*exported XLSX */
 /*global global, exports, module, require:false, process:false, Buffer:false, ArrayBuffer:false */
-var XLSX = {};
+XLSX = {};
 function make_xlsx_lib(XLSX){
